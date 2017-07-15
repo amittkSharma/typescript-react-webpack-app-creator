@@ -7,7 +7,7 @@
     "test": "node index.js"
   },
   "bin": {
-    "create-app": "node index.js"
+    "create-app": "bin/create-app.js"
   },
   "preferGlobal": true,
   "keywords": [
