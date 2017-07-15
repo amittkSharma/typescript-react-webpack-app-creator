@@ -1,0 +1,26 @@
+{
+  "name": "typescript-react-webpack-app-creator",
+  "version": "1.0.0",
+  "description": "Npm module to create an empty react app with typescript as compiller, webpack as bundler and tslint included.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "Typescript",
+    "React",
+    "Webpack",
+    "Tslint",
+    "tsc"
+  ],
+  "author": "Amit Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.1",
+    "child_process": "^1.0.2",
+    "create-file": "^1.0.1",
+    "fs-extra": "^3.0.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {}
+}
