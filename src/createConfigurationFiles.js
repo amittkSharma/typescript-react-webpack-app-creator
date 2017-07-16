@@ -49,7 +49,7 @@ module.exports = {
   UpdatePackageJsonFile: function(callback) {
     var oldFile = readJsonFile ('./package.json');
 
-    var newFile = readJsonFile ('../configuration/package.json');
+    var newFile = readJsonFile ('./configuration/package.json');
 
     console.log('jsons', oldFile)
     console.log('new file', newFile);
