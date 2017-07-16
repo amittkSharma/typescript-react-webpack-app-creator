@@ -15,7 +15,7 @@ function startAppCreationProcess(directoryName) {
 
 module.exports = {
   run: function(arguments) {
-    console.info('Start app creation process with arguments:  ', arguments);
-    startAppCreationProcess(arguments);
+    console.info('Start app creation process with arguments:  ', arguments[1]);
+    startAppCreationProcess(arguments[1]);
   }
 }
