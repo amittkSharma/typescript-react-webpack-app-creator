@@ -30,7 +30,7 @@ function installingNpmPackages(callback) {
         installerStr =  'npm install  ' + module.name + ' --save-dev ' ;
       }
     }
-    console.log('hello world', installerStr)
+    console.log('installer string', installerStr)
 
     child = exec(installerStr, function (error, stdout, stderr) {
      console.log('stdout: ' + stdout);
@@ -49,7 +49,6 @@ function installingNpmPackages(callback) {
       console.log(`installed modules count ${installedModules.length}`)
 
       if (installedModules.length == npmModules.length) {
-        console.log('Amit');
         callback(true);
       }
      }
@@ -68,7 +67,6 @@ function createPackageJson(pAppDirectory, callback) {
        callback(false);
      }
      else {
-       console.log('Package json is created');
        callback(true);
      }
  });
@@ -78,21 +76,11 @@ module.exports = {
   initializeNpmForProject: function(pAppDirectory) {
     createPackageJson(pAppDirectory, (isPackageFileCreated) => {
       if (isPackageFileCreated) {
-        console.log('package file is created now start installing new packages')
-
+        console.log('package file is created.')
         configurationFileCreator.UpdatePackageJsonFile(() => {
-          console.log('DONE!!!!');
+          console.log('Start creating configuration files')
           configurationFileCreator.CreateConfigurationFiles();
         })
-        // configurationFileCreator.CreateConfigurationFiles();
-
-        /*installingNpmPackages((x) => {
-          console.log('after installing packages', x)
-          if (x) {
-            // configurationFileCreator.CreateConfigurationFiles();
-            console.log('start creating other configuration files');
-          }
-       });*/
       }
     });
   }

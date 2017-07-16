@@ -5,3 +5,27 @@ App to create basic structure of the react project with webpack, typescript and 
 | Date				| Author			| Description							|
 | ----------------- | ----------------- | ----------- |
 | 2016-11-21		  	| AmittK		        | Module to create a React App working with typescript, webpack and tslint. |
+
+
+## Installing via Npm
+
+```
+npm install -g typescript-react-webpack-app-creator
+```
+
+## Usage
+
+```
+npm install -g typescript-react-webpack-app-creator
+
+create-app my-app
+cd my-app/
+npm run start
+```
+
+## Start in browser
+
+```
+http://localhost:3000/
+```
+

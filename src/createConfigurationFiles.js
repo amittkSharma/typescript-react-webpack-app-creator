@@ -8,8 +8,8 @@ var configurationFiles = [
   { name: 'tslint.json', content:'', path:__dirname + '/configuration/tslint.json'},
   { name: 'tsconfig.json', content:'', path: __dirname + '/configuration/tsconfig.json'},
   { name: 'index.html', content:'',  path: __dirname + '/sampleFiles/sample_index.html'},
-  { name: './src/app.tsx', content:'', path: __dirname +'/sampleFiles/sample_app.t'},
-  { name: './src/components/hello.tsx', content:'', path: __dirname +'/sampleFiles/sample_hello.t'}
+  { name: './src/index.tsx', content:'', path: __dirname +'/sampleFiles/sample_app.t'},
+  { name: './src/components/Hello.tsx', content:'', path: __dirname +'/sampleFiles/sample_hello.t'}
 ]
 
 function createFileFromFileInfo(fileInfo) {
@@ -48,19 +48,13 @@ module.exports = {
 
   UpdatePackageJsonFile: function(callback) {
     var oldFile = readJsonFile ('./package.json');
-
     var newFile = readJsonFile (__dirname + '/configuration/package.json');
-
-    console.log('jsons', oldFile)
-    console.log('new file', newFile);
 
     oldFile.scripts = newFile.scripts;
 
     var output = {};
     output = jsonConcat(output, oldFile);
     output = jsonConcat(output, newFile);
-
-    console.log('updated file', output);
 
     //writing the new package json file
     fs.outputJson('./package.json', output, function (err) {
@@ -79,9 +73,7 @@ module.exports = {
 
   CreateConfigurationFiles: function() {
     console.log('start creating the config files')
-
     configurationFiles.map( fileInfo => {
-      console.log('fileInfo:', fileInfo);
       createFileFromFileInfo(fileInfo);
     });
   }
