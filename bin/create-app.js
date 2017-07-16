@@ -10,6 +10,6 @@ process.on('uncaughtException', function(err) {
 var appCreator = require('../index.js');
 var parameter = process.argv.slice(2).join(' ');
 
-console.log(`project name entered ${paramter}`)
+console.log(`project name entered ${parameter}`)
 
-appCreator.run(paramter);
+appCreator.run(parameter);
