@@ -8,4 +8,8 @@ process.on('uncaughtException', function(err) {
 });
 
 var appCreator = require('../index.js');
-appCreator.run(process.argv);
+var parameter = process.argv.slice(2).join(' ');
+
+console.log(`project name entered ${paramter}`)
+
+appCreator.run(paramter);
