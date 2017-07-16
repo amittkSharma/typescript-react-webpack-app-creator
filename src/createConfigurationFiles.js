@@ -4,12 +4,12 @@ const createFile = require('create-file');
 const fs = require('fs-extra')
 
 var configurationFiles = [
-  { name: 'webpack.config.js', content:'',  path:'../configuration/webpack.js'},
-  { name: 'tslint.json', content:'', path:'../configuration/tslint.json'},
-  { name: 'tsconfig.json', content:'', path:'../configuration/tsconfig.json'},
-  { name: 'index.html', content:'',  path:'../sampleFiles/sample_index.html'},
-  { name: './src/app.tsx', content:'', path:'../sampleFiles/sample_app.t'},
-  { name: './src/components/hello.tsx', content:'', path:'../sampleFiles/sample_hello.t'}
+  { name: 'webpack.config.js', content:'',  path: __dirname + '/configuration/webpack.js'},
+  { name: 'tslint.json', content:'', path:__dirname + '/configuration/tslint.json'},
+  { name: 'tsconfig.json', content:'', path: __dirname + '/configuration/tsconfig.json'},
+  { name: 'index.html', content:'',  path: __dirname + '/sampleFiles/sample_index.html'},
+  { name: './src/app.tsx', content:'', path: __dirname +'/sampleFiles/sample_app.t'},
+  { name: './src/components/hello.tsx', content:'', path: __dirname +'/sampleFiles/sample_hello.t'}
 ]
 
 function createFileFromFileInfo(fileInfo) {
@@ -49,7 +49,7 @@ module.exports = {
   UpdatePackageJsonFile: function(callback) {
     var oldFile = readJsonFile ('./package.json');
 
-    var newFile = readJsonFile ('./configuration/package.json');
+    var newFile = readJsonFile (__dirname + '/configuration/package.json');
 
     console.log('jsons', oldFile)
     console.log('new file', newFile);
