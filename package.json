@@ -1,6 +1,6 @@
 {
   "name": "typescript-react-webpack-app-creator",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Npm module to create an empty react app with typescript as compiller, webpack as bundler and tslint included.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "Webpack",
     "Tslint",
     "tsc",
-    "Webpack 2"
+    "Webpack 2",
+    "Typescript React Webpack",
+    "Linting",
+    "Reactjs"
   ],
   "author": "Amit Sharma",
   "license": "MIT",
