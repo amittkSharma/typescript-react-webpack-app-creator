@@ -7,7 +7,6 @@ This module helps both new starters and experienced programmers to create projec
 | Date				| Author			| Description							|
 | ----------------- | ----------------- | ----------- |
 | 2017-07-24		  	| AmittK		        | Introduction of Inline CSS Styling.|
-| ----------------- | ----------------- | ----------- |
 | 2017-07-01		  	| AmittK		        | Module to create a React App working with typescript, webpack and tslint. |
 
 ### Dependencies
