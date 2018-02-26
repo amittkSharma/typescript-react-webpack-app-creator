@@ -1,4 +1,8 @@
 # typescript-react-webpack-app-creator
+
+[![](https://img.shields.io/npm/v/typescript-react-webpack-app-creator.svg)](https://www.npmjs.com/package/typescript-react-webpack-app-creator)
+[![](https://img.shields.io/npm/dm/typescript-react-webpack-app-creator.svg)](https://www.npmjs.com/package/typescript-react-webpack-app-creator)
+
 App to create basic structure of the react project with webpack, typescript, Inline-CSS and tslint.
 
 This module helps both new starters and experienced programmers to create project structure without configuring various parts of application. This app also support source maps generation.
