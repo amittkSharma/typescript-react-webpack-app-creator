@@ -10,6 +10,7 @@ This module helps both new starters and experienced programmers to create projec
 ## Updates
 | Date				| Author			| Description							|
 | ----------------- | ----------------- | ----------- |
+| 2018-04-03		  	| AmittK		        | Introduction of new linting module.|
 | 2017-07-24		  	| AmittK		        | Introduction of Inline CSS Styling.|
 | 2017-07-01		  	| AmittK		        | Module to create a React App working with typescript, webpack and tslint. |
 
