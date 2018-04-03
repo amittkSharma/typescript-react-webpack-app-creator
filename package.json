@@ -1,6 +1,6 @@
 {
   "name": "typescript-react-webpack-app-creator",
-  "version": "1.0.13",
+  "version": "1.1.13",
   "description": "Npm module to create an empty react app with typescript as compiller, webpack as bundler and tslint included.",
   "main": "index.js",
   "scripts": {
